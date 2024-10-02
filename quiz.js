@@ -4,7 +4,7 @@ function checkAnswer() {
     let userAnswer = document.querySelector('input[name="quiz"]:checked').value
     let paragraph = document.getElementById("feedback");
 
-    if (userAnswer == correctAnswer){
+    if (userAnswer === correctAnswer){
         paragraph.textContent = "Correct! Well done.";
     }
    
